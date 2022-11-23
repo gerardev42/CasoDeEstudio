@@ -12,6 +12,8 @@ class Capitulo extends Model
 
     public Capitulo $capitulo;
 
+    //Constructor
+
     public function __construct (Capitulo $capitulos) {
         $this->capitulo = $capitulos;
     }
