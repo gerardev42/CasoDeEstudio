@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('recetas', function (Blueprint $table) {
             $table->id();
+
+            $table->string('Title');
+            $Table->integer('Serving');
+            $table->string('Instruction');
+
             $table->timestamps();
         });
     }

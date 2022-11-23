@@ -2,7 +2,8 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
+use App\Models\Receta;
 
 class RecetaTest extends TestCase
 {
@@ -13,6 +14,14 @@ class RecetaTest extends TestCase
      */
     public function test_example()
     {
-        $this->assertTrue(true);
+        $Receta = new Receta();
+
+        $Receta->Title = "Pizza";
+        $Receta->Servings = 2;
+        $Receta->Instruction = "Ninguna";
+        $Receta->save();
+
+        $this->assertEquals("Pizza", $Receta->Title);
+
     }
 }
