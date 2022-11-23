@@ -17,7 +17,7 @@ class RecetaTest extends TestCase
         $Receta = new Receta();
 
         $Receta->Title = "Pizza";
-        $Receta->Servings = 2;
+        $Receta->Serving = 2;
         $Receta->Instruction = "Ninguna";
         $Receta->save();
 
